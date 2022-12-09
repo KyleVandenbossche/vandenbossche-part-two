@@ -12,11 +12,10 @@ Step 5: After last hole, one of three messages logged into the console
 
 
 
-console.log("Welcome to golf")
-
 // declare variables and assign values
 let player = prompt("Welcome to golf, what is your name?");
 let holes = prompt(`Hello ${player} would you like to play 3 or 6 holes today?`);
+
 
 
 if(holes === "3"){
@@ -29,7 +28,7 @@ if(holes === "3"){
 
     total = x1+y1+z1
 
-}
+
 
 if(total > 9){
 
@@ -39,13 +38,13 @@ if(total > 9){
 }else if(total < 9){
 
     belowpar = total-9
-        console.log(`Good game, ${player}. Your total par was: ${belowpar}`)
+        console.log(`Great job, ${player}. Your total par was: ${belowpar}`)
 
 }else if(total = 9){
 
-    console.log(`Great job, ${player}! Your total par was: even`)
+    console.log(`Good game, ${player}! Your total par was: 0`)
 
-}
+}}
 
 
 if(holes ==="6"){
@@ -62,20 +61,20 @@ if(holes ==="6"){
     let z2 = Number(prompt("How many putts for hole 6? (par is 3)"))
 
     othertotal = a+b+c+x2+y2+z2
+
     
-}
 
 if(othertotal > 18){
 
     abovepar1 = othertotal-18
-    console.log( `Nice try, ${player} Your total par was ${abovepar}`)
+    console.log( `Nice try, ${player} Your total par was +${abovepar1}`)
 
 }else if(othertotal <18){
     belowpar1 = othertotal-18
-    console.log(`Good game, ${player} your total par was ${belowpar1}`)
+    console.log(`Great Job, ${player}! your total par was ${belowpar1}`)
 }else if(othertotal = 18){
-    console.log(`Great job, ${player}! Your total par was: even`)
-}
+    console.log(`Good game, ${player}! Your total par was: even`)
+}}
 
 
 
